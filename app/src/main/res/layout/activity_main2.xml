@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="16sp"
-            android:text="Nombre: "
+            android:text="Su Nombre: "
             android:paddingBottom="8dp"/>
 
         <TextView
@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="16sp"
-            android:text="Edad: "
+            android:text="Su Edad: "
             android:paddingBottom="8dp"/>
 
         <TextView
@@ -76,11 +76,11 @@
         android:orientation="horizontal"
         android:layout_weight="3">
     <Button
-        android:id="@+id/btnSalir"
+        android:id="@+id/btnAtras"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="@string/salir"/>
+        android:text="@string/atras"/>
     </LinearLayout>
 
 </LinearLayout>

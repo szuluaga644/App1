@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -41,7 +42,9 @@ public class MainActivity extends AppCompatActivity {
                 nombreUsuario = ingresarUsuario.getText().toString();
                 edadUsuario = ingresarEdad.getText().toString();
 
-                Log.d(TAG, "Nombre guardado: " + nombreUsuario + ", Edad guardada: " + edadUsuario);
+                guardar.setText("Datos Guardados");
+
+                Toast.makeText(getApplicationContext(), "Datos guardados correctamente", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -67,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
 
         Log.d(TAG,"Estoy en el onResume");
-        //poner mensaje en pantalla
+
         salir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
