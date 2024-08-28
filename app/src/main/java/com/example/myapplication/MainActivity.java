@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 guardar.setText("Datos Guardados");
 
                 Toast.makeText(getApplicationContext(), "Datos guardados correctamente", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Estoy en e OnCreate", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -61,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 pasarDatos.putExtra("nombreUsuario", nombreUsuario);
                 pasarDatos.putExtra("edadUsuario", edadUsuario);
                 startActivity(pasarDatos);
+                Toast.makeText(getApplicationContext(), "Estoy en el OnStart", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -75,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
+                Toast.makeText(getApplicationContext(), "Estoy en el onResume", Toast.LENGTH_SHORT).show();
             }
         });
     }

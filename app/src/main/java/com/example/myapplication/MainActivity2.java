@@ -16,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity2 extends AppCompatActivity {
 
     TextView txvNombre, txvEdad;
-    Button salir;
+    Button atras;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         txvNombre = findViewById(R.id.textoNombre);
         txvEdad = findViewById(R.id.textoEdad);
-        salir = findViewById(R.id.btnSalir);
+        atras = findViewById(R.id.btnAtras);
 
         Intent intent = getIntent();
         String nombreUsuario = intent.getStringExtra("nombreUsuario");
@@ -35,7 +35,7 @@ public class MainActivity2 extends AppCompatActivity {
         txvNombre.setText(nombreUsuario);
         txvEdad.setText(edadUsuario);
 
-        salir.setOnClickListener(new View.OnClickListener() {
+        atras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
