@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Aplicacion Movil</string>
+    <string name="nombreyapellido">Ingrese su nombre y apellido</string>
+    <string name="nombre">Nombre y apellido</string>
+    <string name="bienvenida">Bienvenido a la app</string>
+    <string name="opinion">Escribe tu opinion</string>
+    <string name="escribirOpinion">Opina</string>
+    <string name="guardar">Guardar</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="salir">Salir</string>
+    <string name="edad">Edad</string>
+    <string name="ingreseEdad">Ingrese su edad</string>
+</resources>
