@@ -33,6 +33,10 @@ android {
 
 dependencies {
 
+    def lottieVersion = "3.4.0"
+    implementation "com.airbnb.android:lottie:6.5.2"
+
+
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
@@ -40,4 +44,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
 }
